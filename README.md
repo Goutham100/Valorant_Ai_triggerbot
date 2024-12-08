@@ -5,9 +5,11 @@ this is a trigger bot that utilizes the yolov11 model to predict the position of
 
 How to use:
 1. create a custom environment , preferably python 3.8.10 others work too I think
-2. install the varies dependencies given in main.py [note: `pip install pywin32` for `win32gui` ]
-3. `python main.py` to run
-4. make sure to change put keybindings for fire to 'p'.
+2. https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Windows <-- download cuda
+3. `pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118`
+4. install the varies dependencies given in main.py [note: `pip install pywin32` for `win32gui` ]
+5. `python main.py` to run
+6. make sure to change put keybindings for fire to 'p'.
 
 Problems faced and areas to improve:
 1. latency issue takes about 70 to 120 ms to process a single frame , changes depending on the performance of gpu [I think]
