@@ -22,8 +22,8 @@ def triggerbot():
     screen_height = monitor["height"]
 
 
-    region_width = 640
-    region_height = 480
+    region_width = 320
+    region_height = 240
     region = {
         "top": (screen_height - region_height) // 2,
         "left": (screen_width - region_width) // 2,
@@ -39,7 +39,7 @@ def triggerbot():
 
     screen_mid_x = screen_width / 2
     screen_mid_y = screen_height / 2
-    threshold = 5
+    threshold = 10
 
     while True:
 
@@ -48,7 +48,7 @@ def triggerbot():
             print(f"Active window: {active_window}")
             screenshot = np.array(sct.grab(region))
             frame = cv2.cvtColor(screenshot, cv2.COLOR_BGRA2BGR)
-            results = model.predict(frame, imgsz=640, conf=0.25)
+            results = model.predict(frame, imgsz=320, conf=0.5,device=0)
             for result in results:
                 for box in result.boxes:
 
