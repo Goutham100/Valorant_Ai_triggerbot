@@ -48,7 +48,7 @@ def triggerbot():
             print(f"Active window: {active_window}")
             screenshot = np.array(sct.grab(region))
             frame = cv2.cvtColor(screenshot, cv2.COLOR_BGRA2BGR)
-            results = model.predict(frame, imgsz=640, conf=0.5,device=0)
+            results = model.predict(frame, imgsz=640, conf=0.35,device=0)
             for result in results:
                 for box in result.boxes:
 
