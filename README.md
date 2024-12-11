@@ -10,7 +10,7 @@ How to use:
 4. install the varies dependencies given in main.py [note: `pip install pywin32` for `win32gui` ]
 5. `python main.py` to run
 6. make sure to change put keybindings for fire to 'p'.
+7. change the enenmy color to purple for better accuracy
 
 Problems faced and areas to improve:
-1. latency issue takes about 70 to 120 ms to process a single frame , changes depending on the performance of gpu [I think]
-2. right now the dataset consists of 640 imgs and was trained on 50 epochs much training should be provided.
+1. right now the dataset consists of 640 imgs and was trained on 50 epochs much training should be provided.
