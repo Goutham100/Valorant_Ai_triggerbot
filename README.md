@@ -1,5 +1,5 @@
 # Valorant Ai Trigger-bot
-
+https://www.buymeacoffee.com/Goutham0
 Description:
 this is a trigger bot that utilizes the yolov11 model to predict the position of enemies and target head and torso using computer vision
 
